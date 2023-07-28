@@ -1,0 +1,10 @@
+[
+  {
+    "id": "1",
+    "pbNumber": "1",
+    "author": "chokiyeop",
+    "code": "import java.util.Scanner;\n\npublic class Solution {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n      String a = sc.next();\n\n    System.out.print(a);\n  }\n  }",
+    "langauage": "java",
+    "createdAt": "23.07.28"
+  }
+]

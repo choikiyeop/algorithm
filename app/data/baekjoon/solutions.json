@@ -1,0 +1,10 @@
+[
+  {
+    "id": "1",
+    "pbNumber": "2557",
+    "author": "chokiyeop",
+    "code": "public class Main {\n    public static void main(String[] args) {\n        System.out.printf(\"Hello World!\");\n    }\n}",
+    "langauage": "java",
+    "createdAt": "23.07.28"
+  }
+]
