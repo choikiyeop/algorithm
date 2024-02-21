@@ -8,4 +8,6 @@ export default function BfsPage() {
  * @param
  * @returns
  */
-const BFS = () => {};
+const BFS = (graph: [][], findFn: () => void) => {
+  
+};
