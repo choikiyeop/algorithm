@@ -6,6 +6,7 @@ export default function AlgorithmPage() {
       <Link href={"/dfs"}>DFS</Link>
       <Link href={"/bfs"}>BFS</Link>
       <Link href={"/prefix-sum"}>누적합</Link>
+      <Link href={"/dp"}>DP</Link>
       <div>구현</div>
       <div>그래프이론</div>
       <div>트리순회</div>
@@ -17,7 +18,6 @@ export default function AlgorithmPage() {
       <div>투포인터</div>
       <div>LIS</div>
       <div>이분탐색</div>
-      <div>DP</div>
       <div>최단거리</div>
       <div>팬윅트리</div>
     </main>
