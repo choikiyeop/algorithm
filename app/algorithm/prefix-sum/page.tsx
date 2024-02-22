@@ -10,7 +10,6 @@ export default function PrefixSumPage() {
     <main>
       <h2>누적합</h2>
       <div>이전까지 더한 값을 배열에 저장</div>
-      <div>스택이나 재귀함수를 이용</div>
 
       <div></div>
       <div>

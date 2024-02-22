@@ -5,7 +5,7 @@ export default function AlgorithmPage() {
     <main className="container mx-auto">
       <Link href={"/dfs"}>DFS</Link>
       <Link href={"/bfs"}>BFS</Link>
-      <div>누적합 </div>
+      <Link href={"/prefix-sum"}>누적합</Link>
       <div>구현</div>
       <div>그래프이론</div>
       <div>트리순회</div>
