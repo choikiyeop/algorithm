@@ -1,12 +1,15 @@
 import Link from "next/link";
 
 export default function AlgorithmPage() {
+  const a = true;
+  Number(a);
   return (
     <main className="container mx-auto">
-      <Link href={"/dfs"}>DFS</Link>
-      <Link href={"/bfs"}>BFS</Link>
-      <Link href={"/prefix-sum"}>누적합</Link>
-      <Link href={"/dp"}>DP</Link>
+      <Link href={"/algorithm/dfs"}>DFS</Link>
+      <Link href={"/algorithm/bfs"}>BFS</Link>
+      <Link href={"/algorithm/dijkstra"}>다익스트라</Link>
+      <Link href={"/algorithm/prefix-sum"}>누적합</Link>
+      <Link href={"/algorithm/dp"}>DP</Link>
       <div>구현</div>
       <div>그래프이론</div>
       <div>트리순회</div>

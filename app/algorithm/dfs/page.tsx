@@ -7,7 +7,7 @@ export default function DfsPage() {
   };
 
   return (
-    <main className="mx-auto w-1/3 my-32">
+    <main>
       <h2>DFS</h2>
       <div>그래프 전체를 탐색하는 알고리즘으로서 깊이를 우선해서 탐색</div>
       <div>스택이나 재귀함수를 이용</div>
