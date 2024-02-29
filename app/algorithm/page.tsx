@@ -6,8 +6,11 @@ export default function AlgorithmPage() {
   return (
     <main className="container mx-auto">
       <Link href={"/algorithm/dfs"}>DFS</Link>
-      <Link href={"/algorithm/bfs"}>BFS</Link>
-      <Link href={"/algorithm/dijkstra"}>다익스트라</Link>
+      <Link href={"/algorithm/bfs"}>BFS: 가중치 없는 최단거리</Link>
+      <Link href={"/algorithm/dijkstra"}>다익스트라: 모든 가중치 양수</Link>
+      <Link href={"/algorithm/floyd-warshall"}>
+        플로이드-워셜: 모든 정점과 정점 사이의 최단 경로
+      </Link>
       <Link href={"/algorithm/prefix-sum"}>누적합</Link>
       <Link href={"/algorithm/dp"}>DP</Link>
       <div>구현</div>
@@ -23,6 +26,7 @@ export default function AlgorithmPage() {
       <div>이분탐색</div>
       <div>최단거리</div>
       <div>팬윅트리</div>
+      <div>벨만-포드: 음수 가중치 있음</div>
     </main>
   );
 }
