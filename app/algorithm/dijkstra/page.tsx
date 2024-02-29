@@ -1,6 +1,8 @@
 "use client";
 export default function DijkstraPage() {
   const execute = () => {
+    let answer = 0;
+
     const n = 7,
       s = 3,
       a = 4,
@@ -19,7 +21,16 @@ export default function DijkstraPage() {
       graph[e].push([s, d]);
     }
 
-    console.log(dijkstra(graph, s));
+    const dist = dijkstra(graph, s);
+    answer = dist[a] + dist[b];
+
+    for (let i = 1; i < n + 1; i++) {
+      const together = dijkstra(graph, i);
+      console.log(together);
+      answer = Math.min(answer, dist[i] + together[a] + together[b]);
+    }
+
+    console.log(answer);
   };
 
   return (
@@ -44,11 +55,11 @@ const dijkstra = (graph: number[][][], start: number) => {
   while (queue.length) {
     let [to] = queue.pop();
 
-    graph[to].map((next) => {
-      const acc = dist[to] + next[1];
-      if (dist[next[0]] > acc) {
-        dist[next[0]] = acc;
-        queue.unshift(next);
+    graph[to].map((dest) => {
+      const acc = dist[to] + dest[1];
+      if (dist[dest[0]] > acc) {
+        dist[dest[0]] = acc;
+        queue.unshift(dest);
       }
     });
   }
