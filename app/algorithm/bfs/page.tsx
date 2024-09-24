@@ -1,12 +1,22 @@
 "use client";
 
 import { Button } from "@/components/button";
+import { Graph } from "./bfs";
 
 export default function BfsPage() {
   const execute = () => {
-    const graph = [[1, 2, 4], [0, 5], [0, 5], [4], [0, 3], [1, 2]];
-    const visited = Array(6).fill(false);
-    bfs(graph, 0, visited);
+    const graph = new Graph();
+    for (let i = 1; i <= 1000; i++) {
+      graph.addVertex(i);
+    }
+
+    graph.addEdge(999, 1000);
+
+    const result = graph.bfs(1000);
+    console.log(result);
+    // const graph = [[1, 2, 4], [0, 5], [0, 5], [4], [0, 3], [1, 2]];
+    // const visited = Array(6).fill(false);
+    // bfs(graph, 0, visited);
   };
 
   return (
@@ -33,7 +43,7 @@ export default function BfsPage() {
  * @param visited
  * @returns
  */
-export const bfs = (graph: number[][], start: number, visited: boolean[]) => {
+const bfs = (graph: number[][], start: number, visited: boolean[]) => {
   const queue = [];
   queue.unshift(start);
   visited[start] = true;
