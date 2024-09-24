@@ -1,4 +1,7 @@
 "use client";
+
+import { Button } from "@/components/button";
+
 export default function DfsPage() {
   const execute = () => {
     const graph = [[1, 2, 4], [0, 5], [0, 5], [4], [0, 3], [1, 2]];
@@ -7,21 +10,27 @@ export default function DfsPage() {
   };
 
   return (
-    <main>
-      <h2>DFS</h2>
-      <div>그래프 전체를 탐색하는 알고리즘으로서 깊이를 우선해서 탐색</div>
-      <div>스택이나 재귀함수를 이용</div>
+    <main className="space-y-8">
+      <h1 className="text-2xl font-bold">DFS</h1>
+      <section className="space-y-4">
+        <div>
+          <p>그래프 전체를 탐색하는 알고리즘으로서 깊이를 우선해서 탐색</p>
+          <p>스택이나 재귀함수를 이용</p>
+        </div>
 
-      <div>DFS를 사용해야하는 문제</div>
-      <div>
-        <div>1. 그래프의 모든 노드를 방문하는 문제 </div>
-        <p></p>
-      </div>
-      <div>
-        <div>2. 경로의 특징을 저장해둬야 하는 문제</div>
-        <p></p>
-      </div>
-      <button onClick={execute}>DFS 실행</button>
+        <div>
+          <h2 className="text-lg font-bold mb-2">DFS를 사용해야하는 문제</h2>
+          <div>
+            <div>1. 그래프의 모든 노드를 방문하는 문제 </div>
+            <p></p>
+          </div>
+          <div>
+            <div>2. 경로의 특징을 저장해둬야 하는 문제</div>
+            <p></p>
+          </div>
+        </div>
+      </section>
+      <Button onClick={execute}>DFS 실행</Button>
     </main>
   );
 }

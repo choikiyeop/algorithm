@@ -34,14 +34,14 @@ export default function DijkstraPage() {
   };
 
   return (
-    <div>
-      <h1>다익스트라 알고리즘</h1>
+    <main>
+      <h1 className="text-2xl font-bold my-8">다익스트라 알고리즘</h1>
       <div>그래프에서 두 노드 사이의 최단거리를 구하는 알고리즘이다.</div>
       <div>DP + BFS를 사용한다.</div>
       <div>※음수 간선이 존재하면 벨만-포드 알고리즘 사용해야 한다.</div>
       <div>플로이드-워셜도 참고</div>
       <button onClick={execute}>실행</button>
-    </div>
+    </main>
   );
 }
 

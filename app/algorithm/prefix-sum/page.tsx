@@ -8,7 +8,7 @@ export default function PrefixSumPage() {
 
   return (
     <main>
-      <h2>누적합</h2>
+      <h1 className="text-2xl font-bold my-8">누적합</h1>
       <div>이전까지 더한 값을 배열에 저장</div>
 
       <div></div>

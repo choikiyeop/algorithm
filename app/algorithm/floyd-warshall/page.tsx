@@ -34,12 +34,12 @@ export default function FloydWarshallPage() {
   };
 
   return (
-    <div>
-      <h1>플로이드-워셜 알고리즘</h1>
+    <main>
+      <h1 className="text-2xl font-bold my-8">플로이드-워셜 알고리즘</h1>
       <div>그래프에서 가능한 모든 노드 쌍의 최단거리를 구함</div>
       <div>가중치가 음수일때 사용</div>
       <button onClick={execute}>확인</button>
-    </div>
+    </main>
   );
 }
 

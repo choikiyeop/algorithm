@@ -1,5 +1,7 @@
 "use client";
 
+import { Button } from "@/components/button";
+
 export default function BfsPage() {
   const execute = () => {
     const graph = [[1, 2, 4], [0, 5], [0, 5], [4], [0, 3], [1, 2]];
@@ -8,17 +10,17 @@ export default function BfsPage() {
   };
 
   return (
-    <main>
-      <h2>BFS</h2>
-      <p>BFS를 사용해야하는 문제</p>
-      <div>
-        <div>1. 그래프의 모든 노드를 방문하는 문제 </div>
-        <p></p>
-      </div>
-      <div>
-        <div>2. 최단거리를 구해야하는 문제</div>
-      </div>
-      <button onClick={execute}>BFS 실행</button>
+    <main className="space-y-8">
+      <h1 className="text-2xl font-bold">BFS</h1>
+      <section className="space-y-4">
+        <div>
+          <h2 className="text-lg font-bold mb-4">BFS를 사용해야하는 문제</h2>
+          <div>1. 그래프의 모든 노드를 방문하는 문제 </div>
+          <p></p>
+          <div>2. 최단거리를 구해야하는 문제</div>
+        </div>
+      </section>
+      <Button onClick={execute}>BFS 실행</Button>
     </main>
   );
 }

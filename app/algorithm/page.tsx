@@ -3,6 +3,9 @@ import Link from "next/link";
 export default function AlgorithmPage() {
   return (
     <main className="container mx-auto font-sans">
+      <h1 className="flex justify-center text-2xl font-bold my-16">
+        알고리즘 정리
+      </h1>
       <ul className="space-y-3 list-decimal">
         <li>
           <Link

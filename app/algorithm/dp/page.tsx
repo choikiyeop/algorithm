@@ -8,10 +8,10 @@ export default function DpPage() {
   };
 
   return (
-    <div>
-      <h1>DP</h1>
+    <main>
+      <h1 className="text-2xl font-bold my-8">DP</h1>
       <button onClick={execute}>DP 실행</button>
-    </div>
+    </main>
   );
 }
 
